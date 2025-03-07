@@ -10,16 +10,14 @@ const customLevels = {
     error: 0,
     warn: 1,
     info: 2,
-    http: 3,
-    verbose: 4,
-    debug: 5,
+    fatal: 3,
+    debug: 4,
   },
   colors: {
     error: "red",
     warn: "yellow",
     info: "green",
-    http: "cyan",
-    verbose: "blue",
+    fatal: "cyan",
     debug: "magenta",
   },
 };
@@ -30,7 +28,7 @@ winston.addColors(customLevels.colors);
 // Create the logger
 const logger = createLogger({
   levels: customLevels.levels,
-  level: "info", // Default log level
+  level: "debug", // Default log level
   format: combine(
     colorize({ all: true }), // Apply colors to all logs
     timestamp(),
