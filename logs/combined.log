@@ -1,1 +1,24 @@
 2025-03-07T13:42:59.534Z [[31merror[39m]: [31mDatabase connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.[39m
+2025-03-07T14:42:29.978Z [[31merror[39m]: [31mDatabase connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.[39m
+2025-03-07T14:52:01.280Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T14:52:01.295Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T15:42:46.472Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T15:42:46.493Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T15:45:02.253Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T15:45:02.268Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T15:47:17.315Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T15:47:17.333Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T15:47:36.054Z [[31merror[39m]: [31mError creating post: Post validation failed: content: Path `content` is required., title: Path `title` is required.[39m
+2025-03-07T15:49:21.728Z [[32minfo[39m]: [32mNew post created[39m
+2025-03-07T15:52:46.885Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T15:52:46.894Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T16:02:34.773Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:02:34.792Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T16:05:18.558Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:05:18.573Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T16:07:04.386Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:07:04.398Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T16:08:01.375Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:08:01.388Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T16:13:16.152Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:13:16.163Z [[32minfo[39m]: [32mServer running on port 5000[39m

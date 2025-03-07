@@ -5,25 +5,30 @@ import cors from "cors";
 import logger from "./src/utils/logger.js";
 import postRoutes from "./src/routes/post-routes.js";
 
+import bodyParser from "body-parser";
+
+
+
+
 config();
 const app = express();
 
+
+
 // Middleware
-app.use(json());
 app.use(cors());
+// app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json())
 
 // Routes
 app.use("/api/posts", postRoutes);
 
 // Connect to MongoDB
-connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+connect(process.env.MONGO_URL)
   .then(() => {
     logger.info("Connected to MongoDB");
-    app.listen(5000, () => info("Server running on port 5000"));
+    app.listen(5000, () => logger.info("Server running on port 5000"));
   })
   .catch((error) =>
-    logger.error("Database connection error: " + error.message)
+    logger.error("Database connection error: " + error)
   );

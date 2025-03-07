@@ -4,15 +4,16 @@ import logger from "../utils/logger.js";
 
 const router = Router();
 
+
 // Create a post
 router.post("/", async (req, res) => {
   try {
     const newPost = new Post(req.body);
     await newPost.save();
-    info("New post created");
+    logger.info("New post created");
     res.status(201).json(newPost);
   } catch (error) {
-    _error("Error creating post: " + error.message);
+    logger.error("Error creating post: " + error.message);
     res.status(500).json({ error: "Internal server error" });
   }
 });
@@ -32,15 +33,16 @@ router.get("/", async (req, res) => {
 // Get a single post
 router.get("/:id", async (req, res) => {
   try {
+    logger.debug(req.params.id);
     const post = await findById(req.params.id);
     if (!post) {
-      warn("Post not found: " + req.params.id);
+      logger.warn("Post not found: " + req.params.id);
       return res.status(404).json({ error: "Post not found" });
     }
-    info("Fetched post: " + req.params.id);
+    logger.info("Fetched post: " + req.params.id);
     res.status(200).json(post);
   } catch (error) {
-    _error("Error fetching post: " + error.message);
+    logger.error("Error fetching post: " + error.message);
     res.status(500).json({ error: "Internal server error" });
   }
 });
