@@ -13,7 +13,7 @@ This project is a simple **Express.js Blog API** that utilizes **Winston** for l
 
 ### Clone the Repository
 ```sh
-git clone https://github.com/yourusername/express-winston-api.git
+git clone https://github.com/chosenvincent1/Winston-Logging.git
 cd express-winston-api
 ```
 
