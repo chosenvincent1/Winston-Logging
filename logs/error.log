@@ -1,0 +1,1 @@
+2025-03-07T13:42:59.534Z [[31merror[39m]: [31mDatabase connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.[39m
