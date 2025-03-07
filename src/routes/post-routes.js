@@ -22,10 +22,10 @@ router.post("/", async (req, res) => {
 router.get("/", async (req, res) => {
   try {
     const posts = await find();
-    info("Fetched all posts");
+    logger.info("Fetched all posts");
     res.status(200).json(posts);
   } catch (error) {
-    _error("Error fetching posts: " + error.message);
+    logger.error("Error fetching posts: " + error.message);
     res.status(500).json({ error: "Internal server error" });
   }
 });
@@ -33,8 +33,9 @@ router.get("/", async (req, res) => {
 // Get a single post
 router.get("/:id", async (req, res) => {
   try {
-    logger.debug(req.params.id);
-    const post = await findById(req.params.id);
+   
+    const post = await Post.findById(req.params.id);
+    logger.debug("Debugging post: " + req.params.id);
     if (!post) {
       logger.warn("Post not found: " + req.params.id);
       return res.status(404).json({ error: "Post not found" });
@@ -42,7 +43,7 @@ router.get("/:id", async (req, res) => {
     logger.info("Fetched post: " + req.params.id);
     res.status(200).json(post);
   } catch (error) {
-    logger.error("Error fetching post: " + error.message);
+    logger.error("error fetching post: " + error.message);
     res.status(500).json({ error: "Internal server error" });
   }
 });
@@ -52,13 +53,13 @@ router.put("/:id", async (req, res) => {
   try {
     const updatedPost = await findByIdAndUpdate(req.params.id, req.body, { new: true });
     if (!updatedPost) {
-      warn("Post not found for update: " + req.params.id);
+      logger.warn("Post not found for update: " + req.params.id);
       return res.status(404).json({ error: "Post not found" });
     }
-    info("Updated post: " + req.params.id);
+    logger.info("Updated post: " + req.params.id);
     res.status(200).json(updatedPost);
   } catch (error) {
-    _error("Error updating post: " + error.message);
+    logger.error("Error updating post: " + error.message);
     res.status(500).json({ error: "Internal server error" });
   }
 });
@@ -68,13 +69,13 @@ router.delete("/:id", async (req, res) => {
   try {
     const deletedPost = await findByIdAndDelete(req.params.id);
     if (!deletedPost) {
-      warn("Post not found for deletion: " + req.params.id);
+      logger.warn("Post not found for deletion: " + req.params.id);
       return res.status(404).json({ error: "Post not found" });
     }
-    info("Deleted post: " + req.params.id);
+    logger.info("Deleted post: " + req.params.id);
     res.status(200).json({ message: "Post deleted" });
   } catch (error) {
-    _error("Error deleting post: " + error.message);
+    logger.error("Error deleting post: " + error.message);
     res.status(500).json({ error: "Internal server error" });
   }
 });

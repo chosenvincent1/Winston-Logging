@@ -1,3 +1,12 @@
 2025-03-07T13:42:59.534Z [[31merror[39m]: [31mDatabase connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.[39m
+<<<<<<< HEAD
 2025-03-07T14:42:29.978Z [[31merror[39m]: [31mDatabase connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.[39m
 2025-03-07T15:47:36.054Z [[31merror[39m]: [31mError creating post: Post validation failed: content: Path `content` is required., title: Path `title` is required.[39m
+=======
+2025-03-07T14:11:25.309Z [[31merror[39m]: [31mDatabase connection error: querySrv ENOTFOUND _mongodb._tcp.blog.nnamjxa.mongodb.net[39m
+2025-03-07T14:13:20.941Z [[31merror[39m]: [31mDatabase connection error: querySrv ENOTFOUND _mongodb._tcp.blog.nnamjxa.mongodb.net[39m
+2025-03-07T14:15:46.500Z [[31merror[39m]: [31mDatabase connection error: querySrv ENOTFOUND _mongodb._tcp.blog.nnamjxa.mongodb.net[39m
+2025-03-07T16:16:41.255Z [[31merror[39m]: [31mDatabase connection error: querySrv ENOTFOUND _mongodb._tcp.blog.nnamjxa.mongodb.net[39m
+2025-03-07T16:23:05.987Z [[31merror[39m]: [31mError fetching post: findById is not defined[39m
+2025-03-07T16:23:48.116Z [[31merror[39m]: [31mError fetching post: findById is not defined[39m
+>>>>>>> 2772f3eaf1896e4ec04340da92fd05744908a6f7

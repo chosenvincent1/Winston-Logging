@@ -1,4 +1,5 @@
 2025-03-07T13:42:59.534Z [[31merror[39m]: [31mDatabase connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.[39m
+<<<<<<< HEAD
 2025-03-07T14:42:29.978Z [[31merror[39m]: [31mDatabase connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.[39m
 2025-03-07T14:52:01.280Z [[32minfo[39m]: [32mConnected to MongoDB[39m
 2025-03-07T14:52:01.295Z [[32minfo[39m]: [32mServer running on port 5000[39m
@@ -22,3 +23,49 @@
 2025-03-07T16:08:01.388Z [[32minfo[39m]: [32mServer running on port 5000[39m
 2025-03-07T16:13:16.152Z [[32minfo[39m]: [32mConnected to MongoDB[39m
 2025-03-07T16:13:16.163Z [[32minfo[39m]: [32mServer running on port 5000[39m
+=======
+2025-03-07T14:11:25.309Z [[31merror[39m]: [31mDatabase connection error: querySrv ENOTFOUND _mongodb._tcp.blog.nnamjxa.mongodb.net[39m
+2025-03-07T14:13:20.941Z [[31merror[39m]: [31mDatabase connection error: querySrv ENOTFOUND _mongodb._tcp.blog.nnamjxa.mongodb.net[39m
+2025-03-07T14:15:46.500Z [[31merror[39m]: [31mDatabase connection error: querySrv ENOTFOUND _mongodb._tcp.blog.nnamjxa.mongodb.net[39m
+2025-03-07T16:16:41.255Z [[31merror[39m]: [31mDatabase connection error: querySrv ENOTFOUND _mongodb._tcp.blog.nnamjxa.mongodb.net[39m
+2025-03-07T16:21:44.460Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:22:09.552Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:22:09.558Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T16:22:50.696Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:22:50.701Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T16:23:05.987Z [[31merror[39m]: [31mError fetching post: findById is not defined[39m
+2025-03-07T16:23:43.544Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:23:43.550Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T16:23:48.116Z [[31merror[39m]: [31mError fetching post: findById is not defined[39m
+2025-03-07T16:24:43.686Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:24:43.692Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T16:24:46.690Z [[32minfo[39m]: [32mFetched post: 67cb158106f9e492e0c4f5d2[39m
+2025-03-07T16:25:37.378Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:25:37.385Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T16:25:40.775Z [[32minfo[39m]: [32mFetched post: 67cb158106f9e492e0c4f5d2[39m
+2025-03-07T16:26:17.451Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:26:17.457Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T16:26:20.969Z [[32minfo[39m]: [32mFetched post: 67cb158106f9e492e0c4f5d2[39m
+2025-03-07T16:26:47.828Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:26:47.835Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T16:26:51.471Z [[32minfo[39m]: [32mFetched post: 67cb158106f9e492e0c4f5d2[39m
+2025-03-07T16:30:31.853Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:30:31.859Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T16:31:02.492Z [[35mdebug[39m]: [35mDebugging post: =>[39m
+2025-03-07T16:31:02.746Z [[35mdebug[39m]: [35mDebugging post: [39m
+2025-03-07T16:31:02.746Z [[32minfo[39m]: [32mFetched post: 67cb158106f9e492e0c4f5d2[39m
+2025-03-07T16:32:26.588Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:32:26.594Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T16:32:57.784Z [[35mdebug[39m]: [35mDebugging post: 67cb158106f9e492e0c4f5d2[39m
+2025-03-07T16:32:57.784Z [[32minfo[39m]: [32mFetched post: 67cb158106f9e492e0c4f5d2[39m
+2025-03-07T16:33:56.826Z [[35mdebug[39m]: [35mDebugging post: 67cb158106f9e492e0c4f5d4[39m
+2025-03-07T16:33:56.827Z [[33mwarn[39m]: [33mPost not found: 67cb158106f9e492e0c4f5d4[39m
+2025-03-07T16:39:18.731Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:39:18.736Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T16:40:43.777Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:40:43.788Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T16:40:57.532Z [[36mfatal[39m]: [36mFatal error fetching post: Cast to ObjectId failed for value "no" (type string) at path "_id" for model "Post"[39m
+2025-03-07T16:44:17.758Z [[32minfo[39m]: [32mConnected to MongoDB[39m
+2025-03-07T16:44:17.768Z [[32minfo[39m]: [32mServer running on port 5000[39m
+2025-03-07T16:46:54.285Z [[36mfatal[39m]: [36mDatabase connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.[39m
+>>>>>>> 2772f3eaf1896e4ec04340da92fd05744908a6f7
