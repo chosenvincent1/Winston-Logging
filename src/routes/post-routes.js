@@ -10,7 +10,7 @@ router.post("/", async (req, res) => {
   try {
     const newPost = new Post(req.body);
     await newPost.save();
-    logger.info("New post created");
+    // logger.info("New post created");
     res.status(201).json(newPost);
   } catch (error) {
     logger.error("Error creating post: " + error.message);
@@ -33,17 +33,17 @@ router.get("/", async (req, res) => {
 // Get a single post
 router.get("/:id", async (req, res) => {
   try {
-   
     const post = await Post.findById(req.params.id);
-    logger.debug("Debugging post: " + req.params.id);
+    logger.debug("Post ID: " + req.params.id);
     if (!post) {
-      logger.warn("Post not found: " + req.params.id);
+      // logger.warn("Post not found: " + req.params.id);
       return res.status(404).json({ error: "Post not found" });
     }
-    logger.info("Fetched post: " + req.params.id);
+    // logger.info("Fetched post: " + req.params.id);
     res.status(200).json(post);
   } catch (error) {
-    logger.error("error fetching post: " + error.message);
+    // logger.error("error fetching post: " + error.message);
+    // logger.warn("Post not found: " + error.message);
     res.status(500).json({ error: "Internal server error" });
   }
 });

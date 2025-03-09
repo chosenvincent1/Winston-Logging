@@ -7,17 +7,17 @@ const { combine, timestamp, printf, colorize } = format;
 // Define custom log levels and colors
 const customLevels = {
   levels: {
-    error: 0,
-    warn: 1,
-    info: 2,
-    fatal: 3,
+    fatal: 0,
+    error: 1,
+    warn: 2,
+    info: 3,
     debug: 4,
   },
   colors: {
-    error: "red",
-    warn: "yellow",
-    info: "green",
-    fatal: "cyan",
+    fatal: "red",
+    error: "yellow",
+    warn: "blue",
+    info: "cyan",
     debug: "magenta",
   },
 };
